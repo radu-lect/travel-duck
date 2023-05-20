@@ -1,0 +1,325 @@
+*{
+	margin: 0 ;
+	padding: 0;
+
+	/*font-family: Century Gothic;*/
+
+
+}
+
+
+:root {
+    --background-color:  #7C9070;
+    --btn-color: #F97B22;
+    --txt-main: #FAD388;
+    --txt-second: #FEE8B0;
+    --txt-back-country:#9CA777;
+
+    --menu-home:#1E1E1E;
+    --menu-second:#505050;
+
+    --font-light:200;
+    --font-big:600;
+
+    --div-bej:#FFEEC4;
+
+    --back-rgba:#7D865F ;
+
+
+}
+
+/*html[data-theme='light'] {
+    --background-color:#008080;
+    --btn-color: #FFC000;
+}
+
+html[data-theme='dark'] {
+    --background-color: #212a2e;
+    --btn-color: #828fff;
+}
+*/
+
+body{
+
+	font: var(--font-light) 24px "Century Gothic";
+
+	background-color: var(--txt-back-country);
+
+
+}
+
+img{
+	max-width: 100%;
+	display: block;
+
+
+	height: 100px;
+
+}
+
+a{
+ color:var(--txt-main);
+ text-decoration: none;
+}
+
+ul,li{
+	list-style-type: none;
+
+}
+
+
+
+.menu-container{
+	font-size: clamp(1rem, 2vw, 1.2rem);
+	margin: 1.2rem;
+	/*inset: 1em;*/
+
+	display: flex;
+	align-items: center;
+
+	position: fixed;
+	z-index: 1000;
+
+
+
+}
+.menu-home{
+	color: var(--txt-second);
+	background:var(--btn-color);
+font-size: 1.2rem;
+	display: flex;
+
+	cursor: pointer;
+
+	padding: .5rem;
+
+	border-radius: 1rem;
+	/*opacity: .9;*/
+
+
+
+
+
+}
+.menu-second{
+	color: var(--menu-second);
+
+	display: flex;
+	justify-content: flex-start;
+
+	z-index: 1;
+
+	margin-left: auto;
+
+transform: translateX(-150%);
+opacity: 0;
+
+
+	transition: 1s;
+
+
+}
+
+/*animatie toggle*/
+#arrow-btn{
+display: none;
+
+}
+
+/*#arrow-btn:hover{
+
+	scale:1.2;
+}*/
+.toggle-arrow-after{
+	transform: translateX(20px);
+	opacity: 1;
+	transition: 1s;
+
+}
+
+.menu-second > p{
+	/*margin: 0 1rem 0  1rem;*/
+	margin-right:  clamp(0.7rem, 2vw, 1rem);
+	margin-left: clamp(0.7rem, 3vw, 1rem);
+	cursor: pointer;
+
+
+}
+
+
+/*line*/
+.line-container{
+	display: flex;
+width: 15%;
+justify-content: space-between;
+align-items: center;
+position: absolute;
+
+left: 2rem;
+top: 7rem;
+
+opacity: 0.5;
+
+}
+.line{
+	width: .3rem;
+	height: 4rem;
+
+	background: var(--back-rgba);
+
+}
+.line-container>div:nth-of-type(1){
+min-height: 26rem;
+}
+.line-container>div:nth-of-type(2){
+visibility: hidden;
+min-height: 20rem;
+}
+.line-container>div:nth-of-type(3){
+min-height: 30rem;
+}
+.line-container>div:nth-of-type(4){
+	visibility: hidden;
+min-height: 10rem;
+}
+
+.line-container>div:nth-of-type(5){
+min-height: 10rem;
+}
+
+/*----------------------------------------------------------*/
+
+/*arrow down*/
+.arrow-down{
+	background: var(--btn-color);
+
+margin: 0 auto;
+padding: 10px;
+	font-size:1.3rem; 
+	color: var(--txt-main);
+
+	cursor: pointer;
+
+
+border-radius: 15px;
+
+z-index: 500;
+
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.arrow-down>p{
+	position: relative;
+
+	z-index: 700;
+}
+/*after and before */
+
+
+
+/*tara text*/
+.right-content{
+margin-left: 7rem;
+
+}
+.tara-container{
+min-height: 100vh;
+
+display: flex;
+
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.txt-tara{
+	/*text-align: center;*/
+/*	display: flex;
+	align-items: flex-end;
+	flex-direction: column;*/
+margin: 2rem;
+
+}
+
+
+.txt-tara>div:nth-of-type(1){
+	font-size: 1.5rem;
+	color: var(--txt-main);
+
+	margin: 1rem;
+
+	display: flex;
+
+}
+.txt-tara>div:nth-of-type(1)>img{
+	max-height: 3rem;
+
+	margin-left: 15%;
+
+	
+}
+.txt-tara>div:nth-of-type(2){
+	font-size: 1rem;
+	color: var(--txt-second);
+}
+.txt-tara>div:nth-of-type(2)>p{
+margin: 0.6rem;
+font-weight: 100;
+}
+
+
+/*info*/
+hr{
+	 border: 0;
+    border-bottom: 3px dashed var(--background-color);
+    background: var(--txt-back-country);
+
+    margin: 2px;
+
+    width: 80%;
+
+margin: auto;
+}
+.info-container{
+
+	min-height: 30rem;
+	max-width: 80%;
+
+	margin: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+.info-txt-titlu{
+	color: var(--back-rgba);
+	text-align: center;
+
+	font-size: 1rem;
+}
+.info-template{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	flex-wrap: wrap;
+
+
+}
+.info-template>h3{
+	color: var(--back-rgba);
+	
+	font-size: 1.2rem;
+	margin: .1rem;
+
+}
+.info-template>p{
+	color: var(--txt-second);
+	font-size: 1rem;
+	margin: .1rem;
+	opacity: .7;
+
+
+
+}
+
