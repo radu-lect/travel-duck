@@ -2,7 +2,8 @@
 let productsGrid = document.getElementById('products-grid');
 let productsArray = [];
 let xhr = new XMLHttpRequest();
-let url = 'https://my-json-server.typicode.com/radu-lect/travel-duck';
+let url = 'https:my-json-server.typicode.com/radu-lect/travel-duck';
+// https:github.com/radu-lect/travel-duck
 // https:github.com/radu-lect/travel-duck.git
 //verificarea prin punerea in browser
 // 'https://my-json-server.typicode.com/#nume/#proiect_nume'
