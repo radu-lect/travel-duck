@@ -38,8 +38,9 @@ xhr.onload = function(){
 }
 xhr.send();
 
+// baza de date
 
-
+// "photo_url": "https://raw.githubusercontent.comradu-lect/travel-duck/main/img/users2.png",
 
 
 
