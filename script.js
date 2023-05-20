@@ -16,9 +16,9 @@ xhr.onload = function(){
     products.forEach(p=>{
         productsArray.push(p);
         let pElem = document.createElement('div');
-        pElem.classList.add('tara');
+        pElem.classList.add('product');
         pElem.innerHTML=`
-                      
+                      <div>
                             <h2 class="product-name">${p.name}</h2>
                             
                             <div id="product-descriere">
@@ -29,7 +29,7 @@ xhr.onload = function(){
                             <p> Zona: ${p.zona}</p>
                             <p> Time: ${p.travel_time}</p>
                         
-                            
+                      </div>      
                             
                         `;
                     productsGrid.append(pElem);
