@@ -1,3 +1,51 @@
+// baza de date
+let productsGrid = document.getElementById('products-grid');
+let productsArray = [];
+let xhr = new XMLHttpRequest();
+let url = 'https://my-json-server.typicode.com/radu-lect/travel-duck';
+// https:github.com/radu-lect/travel-duck.git
+//verificarea prin punerea in browser
+// 'https://my-json-server.typicode.com/#nume/#proiect_nume'
+
+xhr.open('GET', url+'/tari');
+xhr.responseType = 'json';
+xhr.onload = function(){
+    let products = xhr.response;
+    //ce adaugam pe pagina
+    productsGrid.innerHTML = null;
+    products.forEach(p=>{
+        productsArray.push(p);
+        let pElem = document.createElement('div');
+        pElem.classList.add('tara');
+        pElem.innerHTML=`
+                      
+                            <h2 class="product-name">${p.name}</h2>
+                            
+                            <div id="product-descriere">
+                            <p> Capitala: ${p.capitala}</p>
+                            <p> Limba: ${p.limba}</p>
+                            <p> Bani: ${p.bani}</p>
+                            <p> Populația: ${p.population}</p>
+                            <p> Zona: ${p.zona}</p>
+                            <p> Time: ${p.travel_time}</p>
+                        
+                            
+                            
+                        `;
+                    productsGrid.append(pElem);
+
+    })
+}
+xhr.send();
+
+
+
+
+
+
+
+
+
 // light dark mode
 // var toggle = document.getElementById("theme-toggle");
 

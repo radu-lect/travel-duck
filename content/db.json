@@ -11,7 +11,7 @@
             "bani": "Euro",
             "population": "83.2 mil",
             "zona": "(GMT+2)",
-            "travel-time": " Mai, Septembrie și Octombrie"
+            "travel_time": " Mai, Septembrie și Octombrie"
         },
         {
             "id": 2,
@@ -21,7 +21,7 @@
             "bani": "Ron",
             "population": "19.12 mil",
             "zona": "(GMT+3)",
-            "travel-time": " din Aprilie pana în Octombrie"
+            "travel_time": " din Aprilie pana în Octombrie"
         },
         {
             "id": 3,
@@ -31,7 +31,7 @@
             "bani": "Lei",
             "population": "2.615 mil",
             "zona": "(GMT+3)",
-            "travel-time": " Mereu"
+            "travel_time": " Mereu"
         },
         {
             "id": 4,
@@ -41,7 +41,7 @@
             "bani": "Euro",
             "population": "59.11 mil",
             "zona": "(GMT+2)",
-            "travel-time": " Mai, Iunie, Septembrie și Octombrie"
+            "travel_time": " Mai, Iunie, Septembrie și Octombrie"
         },
         {
             "id": 5,
@@ -51,7 +51,7 @@
             "bani": "Euro",
             "population": "47.42 mil",
             "zona": "(GMT+2)",
-            "travel-time": " Aprilie, Mai, Septembrie și Octombrie"
+            "travel_time": " Aprilie, Mai, Septembrie și Octombrie"
         },
         {
             "id": 6,
@@ -61,7 +61,7 @@
             "bani": "Franc",
             "population": "67.75 mil",
             "zona": "(GMT+2)",
-            "travel-time": " Iunie, Iulie, August și Septembrie "
+            "travel_time": " Iunie, Iulie, August și Septembrie "
         }
     ]
 }
