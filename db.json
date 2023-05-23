@@ -1,7 +1,7 @@
 
             
 {
-    "tari": [
+    "germania": [
         {
             "id": 1,
             "name": "Germania",
@@ -11,8 +11,11 @@
             "population": "83.2 mil",
             "zona": "(GMT+2)",
             "travel_time": " Mai, Septembrie și Octombrie"
-        },
-        {
+        }
+        
+    ],
+    "romania": [
+       {
             "id": 2,
             "name": "Romania",
             "capitala": "București",
@@ -21,46 +24,6 @@
             "population": "19.12 mil",
             "zona": "(GMT+3)",
             "travel_time": " din Aprilie pana în Octombrie"
-        },
-        {
-            "id": 3,
-            "name": "Republica Moldova",
-            "capitala": "Chisinău",
-            "limba": "Română",
-            "bani": "Lei",
-            "population": "2.615 mil",
-            "zona": "(GMT+3)",
-            "travel_time": " Mereu"
-        },
-        {
-            "id": 4,
-            "name": "Italia",
-            "capitala": "Roma",
-            "limba": "Italiană",
-            "bani": "Euro",
-            "population": "59.11 mil",
-            "zona": "(GMT+2)",
-            "travel_time": " Mai, Iunie, Septembrie și Octombrie"
-        },
-        {
-            "id": 5,
-            "name": "Spania",
-            "capitala": "Madrid",
-            "limba": "Spaniolă",
-            "bani": "Euro",
-            "population": "47.42 mil",
-            "zona": "(GMT+2)",
-            "travel_time": " Aprilie, Mai, Septembrie și Octombrie"
-        },
-        {
-            "id": 6,
-            "name": "Franta",
-            "capitala": "Paris",
-            "limba": "Franceză",
-            "bani": "Franc",
-            "population": "67.75 mil",
-            "zona": "(GMT+2)",
-            "travel_time": " Iunie, Iulie, August și Septembrie "
         }
     ]
 }

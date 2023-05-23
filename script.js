@@ -1,4 +1,6 @@
 // baza de date
+$( "#romania" ).on( "click", function() {
+
 let productsGrid = document.getElementById('products-grid');
 let productsArray = [];
 let xhr = new XMLHttpRequest();
@@ -8,7 +10,7 @@ let url = 'https:my-json-server.typicode.com/radu-lect/travel-duck';
 //verificarea prin punerea in browser
 // 'https://my-json-server.typicode.com/#nume/#proiect_nume'
 
-xhr.open('GET', url+'/tari');
+xhr.open('GET', url+'/romania');
 xhr.responseType = 'json';
 xhr.onload = function(){
     let products = xhr.response;
@@ -38,6 +40,11 @@ xhr.onload = function(){
     })
 }
 xhr.send();
+
+
+console.log("merge 1");
+ 
+} );
 
 // baza de date
 
@@ -149,8 +156,10 @@ $(document).ready(function(){
   
   $( "#arrow-down" ).click(function() {
     var x = $(window).scrollTop();
-    $(window).scrollTop(x+780);
+    $(window).scrollTop(x+720);
   });
 });
 
+
+// left right
 

@@ -1,0 +1,347 @@
+*{
+	margin: 0 ;
+	padding: 0;
+
+	/*font-family: Century Gothic;*/
+
+
+}
+
+
+:root {
+    --background-color:  #7C9070;
+    --btn-color: #F97B22;
+    --txt-main: #FAD388;
+    --txt-second: #FEE8B0;
+    --txt-back-country:#9CA777;
+
+    --menu-home:#1E1E1E;
+    --menu-second:#505050;
+
+    --font-light:200;
+    --font-big:600;
+
+    --div-bej:#FFEEC4;
+
+    --back-rgba:#7D865F ;
+
+    --txt-yellow:#F7D060;
+
+
+}
+
+/*html[data-theme='light'] {
+    --background-color:#008080;
+    --btn-color: #FFC000;
+}
+
+html[data-theme='dark'] {
+    --background-color: #212a2e;
+    --btn-color: #828fff;
+}
+*/
+
+body{
+
+	font: var(--font-light) 24px "Century Gothic";
+
+	background-color: var(--back-rgba);
+
+	overflow-x: hidden;
+
+
+
+
+}
+
+img{
+	max-width: 100%;
+	display: block;
+
+
+	height: 100px;
+
+}
+
+a{
+ color:var(--txt-main);
+ text-decoration: none;
+}
+
+ul,li{
+	list-style-type: none;
+
+}
+
+
+
+.menu-container{
+	font-size: clamp(1rem, 2vw, 1.2rem);
+	margin: 1.2rem;
+	/*inset: 1em;*/
+
+	display: flex;
+	align-items: center;
+
+	position: fixed;
+	z-index: 1000;
+
+
+
+}
+.box {
+    /*background-color: #e1309e;*/
+    /*border: 10px solid #6a51d2;*/
+  /*  height: 80px;
+    width: 80px;*/
+    box-shadow: 0 0 0 4px var(--btn-color) inset;
+    box-sizing: border-box;
+    border-radius: 1rem;
+ }
+.menu-home{
+	/*color: var(--txt-main);*/
+	/*color:var(--btn-color);*/
+	color:var(--txt-main);
+
+	/*color: #FF8F40;*/
+font-size: 1.2rem;
+	display: flex;
+
+	cursor: pointer;
+
+	padding: .6rem;
+/*
+	border-radius: 1rem;
+
+	border:3px dashed var(--btn-color);*/
+
+}
+.menu-second{
+	color: var(--menu-second);
+
+	display: flex;
+	justify-content: flex-start;
+
+	z-index: 1;
+
+	margin-left: auto;
+
+transform: translateX(-150%);
+opacity: 0;
+
+
+	transition: 1s;
+
+
+}
+
+/*animatie toggle*/
+#arrow-btn{
+display: none;
+
+}
+
+/*#arrow-btn:hover{
+
+	scale:1.2;
+}*/
+.toggle-arrow-after{
+	transform: translateX(20px);
+	opacity: 1;
+	transition: 1s;
+
+}
+
+.menu-second > p{
+	/*margin: 0 1rem 0  1rem;*/
+	margin-right:  clamp(0.7rem, 2vw, 1rem);
+	margin-left: clamp(0.7rem, 3vw, 1rem);
+	cursor: pointer;
+
+
+}
+
+
+.container-discovery{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.txt-discovery{
+	position: absolute;
+	margin: auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+
+	max-width: 22rem;
+	letter-spacing: 1.5px;
+
+}
+.txt-discovery>h2, .txt-discovery>h4, .txt-discovery>p{
+	color: var(--menu-home);
+
+	margin-top:40px;
+
+	position: relative;
+z-index: 400;
+
+}
+.txt-discovery>h2{
+	font-size: 2rem;
+	opacity: 0.9;
+	
+
+}
+.txt-discovery>h4{
+	font-size: 1.5rem;
+
+	/*background: rgba(0,0,0,0.1);*/
+	border:3px dashed rgba(0,0,0,0.2);
+	padding: 0.4rem;
+	border-radius: 1rem;
+	margin: 2rem;
+	opacity: 0.8;
+	
+
+
+}
+.txt-discovery>p{
+	letter-spacing: 2px;
+	padding-bottom: 2rem;
+
+	opacity: 0.7;
+
+	margin-top: 2rem;
+	font-size: 1rem;
+	width: 80%;
+/*z-index: 26;*/
+
+
+
+}
+.img-descovery{
+
+}
+
+.img-descovery>img{
+	height: 700px;
+margin: auto;
+position: relative;
+z-index: 280;
+
+/*border:3px dashed rgba(0,0,0,0.3);*/
+/*background:  rgba(0,0,0,0.1);*/
+}
+
+
+
+/*hr*/
+.hr-txt-oferte{
+	 border: 0;
+    border-bottom: 5px solid rgba(0,0,0,0.4);
+
+/*aici tine cont*/
+    /*width: 80%;*/
+margin-top: 3rem;
+/*margin: auto;*/
+}
+
+
+
+/*circle img*/
+/*.dot-container{
+}
+
+.dot{
+position: absolute;
+top: 30rem;
+left: 30rem;
+
+	transform-origin: right center;
+
+
+
+	border-radius: 50%;
+	background: red;
+	height: 20rem;
+	width: 20rem;
+
+	z-index: 10;
+}
+.dot-container>div:nth-of-type(1){
+
+	background: #9CA777;
+	height: 60rem;
+	width: 70rem;
+
+	z-index: 10;
+}
+.dot-container>div:nth-of-type(2){
+
+	background: red;
+	height: 40rem;
+	width: 30rem;
+
+	z-index: 10;
+}
+.dot-container>div:nth-of-type(3){
+
+	background: red;
+	height: 10rem;
+	width: 20rem;
+
+	z-index: 10;
+}
+*/
+
+
+
+
+/*footer*/
+footer{
+background: rgba(0,0,0,0.2);
+
+}
+.footer{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+text-align: center;
+
+
+}
+.footer>div{
+	margin: 1rem;
+	max-width: 40%;
+
+}
+
+.footer>div>h4{
+	color: var(--menu-home);
+	font-size: 1.1rem;
+
+}
+.footer>div>p{
+	/*color: var(--black-rgba);*/
+
+	font-size: 1rem;
+
+	margin: 1rem;
+
+}
+
+.copyright{
+	text-align: center;
+	color: var(--menu-home);
+	padding: 0 0  1rem 0 ;
+
+	font-size: 1.1rem;
+}
