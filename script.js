@@ -1,5 +1,15 @@
 // baza de date
-$( "#romania" ).on( "click", function() {
+// var xhr2 = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+// xhr2.open('get', 'tara.html', true);
+// xhr2.onreadystatechange = function() {
+//     if (xhr2.readyState == 4 && xhr2.status == 200) { 
+// grabData();
+        
+//     } 
+// }
+// xhr2.send();
+
+function grabData(){
 
 let productsGrid = document.getElementById('products-grid');
 let productsArray = [];
@@ -12,7 +22,9 @@ let url = 'https:my-json-server.typicode.com/radu-lect/travel-duck';
 
 xhr.open('GET', url+'/romania');
 xhr.responseType = 'json';
+
 xhr.onload = function(){
+
     let products = xhr.response;
     //ce adaugam pe pagina
     productsGrid.innerHTML = null;
@@ -40,11 +52,54 @@ xhr.onload = function(){
     })
 }
 xhr.send();
+}
 
 
-console.log("merge 1");
- 
-} );
+//      $(document).ready(function(){
+// console.log("merge 1");
+//       const currentUrl = window.location.href;
+// console.log(currentUrl);
+// if (currentUrl == "file:///C:/Informatica/travel-duck/tara.html") {
+// grabData();
+
+// console.log("merge 3");
+// }
+// });
+
+
+// $('#romania, #germania').click(function () {
+//    if (this.id == 'romania') {
+// console.log("rom");
+
+//    }
+//    else if (this.id == 'germania') {
+//       alert('Submit 2 clicked');
+//    }
+// });
+
+
+// }
+//         $("#romania").on("click",function(){
+
+//  seeTara();
+//         });
+
+
+      // grabData(); 
+
+// $(document).ready(function (e) {
+
+//     $(".qololbl").click(function(){
+//         alert("Hi");
+//      });
+     
+//      $('.qololbl').click();
+// });
+// $("#romania").trigger( "click" , function(){
+// console.log("merge 3");
+    
+//     grabData();
+// });
 
 // baza de date
 

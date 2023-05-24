@@ -1,29 +1,17 @@
 
             
 {
-    "germania": [
+    "romania": [
         {
             "id": 1,
             "name": "Germania",
-            "capitala": "Berlin",
-            "limba": "Germana",
-            "bani": "Euro",
-            "population": "83.2 mil",
-            "zona": "(GMT+2)",
-            "travel_time": " Mai, Septembrie și Octombrie"
+            "photo_url": "https://raw.githubusercontent.comradu-lect/travel-duck/main/img/romania.png",
+            "bani": "100$",
+            "people": "2",
+            "days": "2",
+            "stars":"4.5"
         }
         
-    ],
-    "romania": [
-       {
-            "id": 2,
-            "name": "Romania",
-            "capitala": "București",
-            "limba": "Română",
-            "bani": "Ron",
-            "population": "19.12 mil",
-            "zona": "(GMT+3)",
-            "travel_time": " din Aprilie pana în Octombrie"
-        }
     ]
+    
 }
