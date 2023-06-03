@@ -97,14 +97,13 @@ ul,li{
     /*border: 10px solid #6a51d2;*/
   /*  height: 80px;
     width: 80px;*/
-    box-shadow: 0 0 0 4px var(--btn-color) inset;
+    box-shadow: 0 0 0 4px var(--yellow-back) inset;
     box-sizing: border-box;
     border-radius: 1rem;
  }
 .menu-home{
 	/*color: var(--txt-main);*/
 	/*color:var(--btn-color);*/
-	color:var(--txt-main);
 
 	/*color: #FF8F40;*/
 font-size: 1.2rem;
@@ -118,9 +117,14 @@ font-size: 1.2rem;
 
 	border:3px dashed var(--btn-color);*/
 
+
+}
+.menu-home>a{
+	color:var(--yellow-back);
+
 }
 .menu-second{
-	color: var(--menu-second);
+	/*color: var(--menu-second);*/
 
 	display: flex;
 	justify-content: flex-start;
@@ -461,10 +465,28 @@ opacity: 0.4;
 /*margin-top: 3rem;*/
 padding-top: 4rem;
 margin: auto;
+display: flex;
+flex-direction: column;
+
+
+}
+.container-oferte-tari>h3{
+
+	font-weight: lighter;
+	color: var(--gry-light);
+	letter-spacing: 0.5px;
+
+	margin: auto;
+
+
+
+
 }
 .oferte-all{
-	display: flex;
-	overflow-x: auto;
+	display: grid;
+	grid-template-columns: 1fr; ;
+	grid-template-rows: repeat(4, 1fr);
+	/*overflow-x: auto;*/
 	scroll-behavior: smooth;
 
 	/*margin-bottom: 3rem;*/
@@ -473,44 +495,10 @@ margin: auto;
 }
 
 
-.section{
-	border-right: 4px solid rgba(0,0,0,0.2);
-	border-left: 4px solid rgba(0,0,0,0.2);
-/*box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;*/
-
-}
-.section::-webkit-scrollbar {
-  height: 20px;
-  /*background-color: red;*/
-
-
-}
-
-.section::-webkit-scrollbar-track {
-  background-color: #e4e4e4;
-  background-color: var(--back-rgbar);
-  border-radius: 100px;
-}
-
-/*.section::-webkit-scrollbar-thumb {
-  background-color: #d4aa70;
-  border-radius: 100px;
-  
-
-}*/
-
-.section::-webkit-scrollbar-thumb {
-  border: 5px solid transparent;
-  border-radius: 100px;
-  background-color: var(--txt-back-country);
- 
-  background-clip: content-box;
-}
-/*oferta-template-show*/
 .oferta-template-show{
 	border: 4px dashed rgba(0,0,0,0.2);
 	
-	min-width: 22rem;
+	min-width: 19.5rem;
 	padding: 1rem ;
 border-radius: 0.6rem ;
 

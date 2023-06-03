@@ -1,0 +1,381 @@
+*{
+	margin: 0 ;
+	padding: 0;
+
+	/*font-family: Century Gothic;*/
+
+
+}
+
+
+:root {
+    --background-color:  #7C9070;
+    --btn-color: #F97B22;
+    --txt-main: #FAD388;
+    --txt-second: #FEE8B0;
+    --txt-back-country:#9CA777;
+
+    --menu-home:#1E1E1E;
+    --menu-second:#505050;
+
+    --font-light:200;
+    --font-big:600;
+
+    --div-bej:#FFEEC4;
+
+    --back-rgba:#7D865F;
+
+    --gry-dark:#282828;
+    --gry-light:#404040;
+
+    --yellow-back:#F7D060;
+
+
+}
+
+/*html[data-theme='light'] {
+    --background-color:#008080;
+    --btn-color: #FFC000;
+}
+
+html[data-theme='dark'] {
+    --background-color: #212a2e;
+    --btn-color: #828fff;
+}
+*/
+
+body{
+
+	font: var(--font-light) 24px "Century Gothic";
+
+	background-color: var(--back-rgba);
+/*height: 200vh;*/
+
+
+}
+
+img{
+	max-width: 100%;
+	display: block;
+
+
+	height: 100px;
+
+}
+
+a{
+ color:var(--txt-main);
+ text-decoration: none;
+}
+
+ul,li{
+	list-style-type: none;
+
+}
+
+
+.menu-container{
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin: 30px;
+    /*inset: 1em;*/
+
+    display: flex;
+    align-items: center;
+    /*position: fixed;*/
+    z-index: 1000;
+
+
+
+}
+.menu-home{
+    color: var(--txt-second);
+    background:var(--btn-color);
+
+font-size: 1.5rem;
+    display: flex;
+
+    cursor: pointer;
+
+    padding: .5rem;
+
+    border-radius: 1rem;
+    opacity: .9;
+
+
+
+
+
+}
+.menu-second{
+    color: var(--menu-second);
+
+    display: flex;
+    justify-content: flex-start;
+
+    z-index: 1;
+
+    margin-left: auto;
+
+transform: translateX(-150%);
+opacity: 0;
+
+
+    transition: 1s;
+
+
+}
+
+/*animatie toggle*/
+#arrow-btn{
+display: none;
+
+}
+
+.container-intrebari{
+    display: flex;
+    flex-direction: column;
+
+    background: var(--txt-back-country);
+
+    padding: 2rem;
+
+    border-radius: 1rem;
+
+
+}
+.galben{
+    padding: 0.3rem;
+
+    background: var(--yellow-back);
+    max-width: 20%;
+
+    border-radius: 1rem;
+}
+.container-intrebari>p{
+     color: var(--yellow-back);
+
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+
+    margin: 1rem 0 ;
+}
+.intrebare{
+    color: var(--gry-dark);
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+.raspuns{
+    color: var(--gry-light);
+    font-size: 1.2rem;
+    margin: 0 10px;
+
+}
+/*team*/
+
+.team-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+/*margin: auto;*/
+
+padding: 3rem;
+
+background-color: #7D865F;
+/*opacity: 1;*/
+background-image: radial-gradient(#9CA777 1.4000000000000001px, #7D865F 1.4000000000000001px);
+background-size: 28px 28px;
+}
+.team-container>p{
+    align-self: center;
+
+    color: var(--gry-light);
+    font-size: 2rem;
+    
+}
+.team-template, .salari{
+    min-width: 80%;
+    border-radius: 1rem;
+
+
+}
+.team-template{
+    min-height: 10rem;
+
+
+
+    background: var(--txt-back-country);
+
+    margin: 1rem;
+
+    display: flex;
+    align-items: center;
+
+    /*flex-direction: column;*/
+
+
+}
+
+
+.team-template>img{
+    min-height: 9rem;
+    margin: 5px;
+
+    border-radius: 0.6rem;
+
+
+
+}
+
+.txt{
+    /*background: red;*/
+    padding: 0.5rem 0 1rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    letter-spacing: 0.5px;
+}
+.second-txt{
+    font-size: small;
+
+    color:var(--gry-light);
+    opacity: 0.7;
+
+    margin:0.3rem 0 0 0.3rem;
+    
+}
+.second-txt>p:nth-of-type(1){
+    margin-bottom: 5px;
+    
+}
+.second-txt>p{
+    margin-bottom: 2px;
+    
+}
+.txt>h4{
+   font-size: 1.3rem;
+
+   color: var(--gry-light);
+
+   font-weight: 100;
+    margin:0 0 0.3rem 0.3rem;
+
+
+
+
+
+}
+
+
+/*salariul*/
+.salari-all{
+    background: rgba(0,0,0,0.2);
+    /*background: red;*/
+    padding: 0.2rem;
+    width: 70%;
+
+    border-radius: 0.6rem;
+
+    display: flex;
+
+    
+    align-items: center;
+
+
+}
+.salari{
+    background: var(--txt-back-country);
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+
+    padding: 0.2rem;
+
+    margin-top: 10px;
+
+}
+.salari>div>p{
+    color: var(--gry-light);
+
+    opacity: 0.7;
+    font-size: 1rem;
+    padding: 0.7rem;
+    min-width: 6rem;
+
+}
+.bara-salariu{
+
+}
+.suma{
+
+    border-radius: 0.6rem;
+    background: var(--yellow-back);
+    min-width: 50%;
+    height: 2rem;
+
+    display: flex;
+
+}
+.p10{
+    min-width: 10%;
+}
+.p30{
+    min-width: 30%;
+}
+.p15{
+    min-width: 15%;
+}
+
+.p20{
+    min-width: 20%;
+}
+.p100{
+    min-width: 100%;
+}
+.p60{
+    min-width: 60%;
+}
+.p40{
+    min-width: 40%;
+}
+.p50{
+    min-width: 50%;
+}
+.p70{
+    min-width: 70%;
+}
+.p90{
+    min-width: 90%;
+}
+.p80{
+    min-width: 80%;
+}
+
+.suma>p{
+    color: var(--gry-light);
+
+    opacity: 0.7;
+
+    font-size: 1rem;
+
+    margin: auto;
+}
+.team-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /*background: red;*/
+
+    margin-bottom: 4rem;
+}
+
+
+.statistici{
+    width: 80%;
+}
+.none-team{
+    /*display: none;*/
+}

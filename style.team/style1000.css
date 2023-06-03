@@ -1,0 +1,30 @@
+@media only screen and (min-width:  1000px ){
+.team-all{
+    flex-direction: row;
+    
+    /*background: red;*/
+}
+
+.team-template{
+	min-width: 50%;
+
+}
+.salari{
+	margin-top: 0;
+}
+.statistici{
+
+	max-width: 50%;
+	display: flex;
+	justify-content: space-between;
+
+	flex-direction: column;
+
+	margin:0 1rem 0 0 ;
+}
+.statistici, .team-template{
+height: 12rem;
+
+}
+
+}
